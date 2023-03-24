@@ -10,6 +10,7 @@ import '../App.css';
 function App() {
   const [currentRepo, setCurrentRepo] = useState('');
   const [repos, setRepos] = useState([]);
+  const [errorMessage, setErrorMessage] = useState('');
 
   const handleSearch = async () => {
     try {
@@ -21,13 +22,14 @@ function App() {
         if (!isExist) {
           setRepos((prev) => [...prev, data]);
           setCurrentRepo('');
+          setErrorMessage('');
           return;
         }
       }
 
-      alert('Usuario já encontrado');
+      
     } catch (error) {
-      console.log('Error. Tente novamente mais tarde.', error);
+      setErrorMessage('Usuário não encontrado. Verifique o nome de usuário e tente novamente.');
     }
   };
 
@@ -41,6 +43,7 @@ function App() {
       <img className="logo" src={gitLogo} alt="GitHub logo" />
       <Input value={currentRepo} onChange={(e) => setCurrentRepo(e.target.value)} />
       <Button onClick={handleSearch} />
+      {errorMessage && <p>{errorMessage}</p>}
       {repos.map((user) => (
         <ItensUser key={user.id} itens={user} handleRemoveUser={handleRemoveUser} />
       ))}
