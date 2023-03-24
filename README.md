@@ -8,9 +8,8 @@ Para usar o projeto, siga os seguintes passos:
 
 - 1 - Clone o repositório usando o comando git clone git@github.com:Matheus-Loubach/WikiGitApi.git
 - 2 - Na raiz do projeto, instale as dependências utilizando o comando npm install.
-- 3 - Crie um arquivo .env na raiz do projeto e adicione a chave de acesso pessoal (Personal Access Token) do Github. Para obter essa chave, siga as instruções descritas na documentação do Github.
-- 4 - Inicie o servidor local usando o comando npm start.
-- 5 - Acesse a aplicação em http://localhost:3000.
+- 3 - Inicie o servidor local usando o comando npm start.
+- 4 - Acesse a aplicação em http://localhost:3000.
 
 # Funcionalidades
 - A aplicação tem as seguintes funcionalidades:
