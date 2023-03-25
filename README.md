@@ -17,9 +17,10 @@ Para usar o projeto, siga os seguintes passos:
 - 1 - Buscar usuários pelo nome de usuário do Github.
 - 2 - Mostrar informações do usuário, como nome, site, biografia, cidade e avatar.
 - 3 - Apresentar mensagem de erro caso o usuário não seja encontrado.
-- 4 - Estrutura do projeto
 
-# O projeto tem a seguinte estrutura:
+# Estrutura do projeto
+
+- O projeto tem a seguinte estrutura:
 
 - src
 - components: contém os componentes ReactJS da aplicação e estilização da aplicação.
