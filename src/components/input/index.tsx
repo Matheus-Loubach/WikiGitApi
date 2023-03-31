@@ -1,7 +1,8 @@
-import React from 'react'
 import {InputContainer} from './styles'
+import {IIpunt} from './type'
 
-const index = ({value, onChange}) => {
+
+const index = ({value, onChange}: IIpunt) => {
   return (
     <InputContainer>
         <input value={value} onChange={onChange}/>

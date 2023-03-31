@@ -1,14 +1,15 @@
-import React from 'react';
-import { ItemContainer } from './StyleItem';
 
-const Index = ({ itens, handleRemoveUser }) => {
+import { ItemContainer } from './StyleItem';
+import {IItensUser} from './type'
+
+const Index = ({ itens, handleRemoveUser }: IItensUser) => {
   const { id, name, avatar_url, html_url, blog, location, bio } = itens;
 
   return (
     <ItemContainer>
       <h3>{name}</h3>
       <p>{bio}</p>
-      <p>{location ? location : [] }</p>
+      <p>{location ? location : []}</p>
       <p>
         Acesse para mais informações:{' '}
         <a target="_blank" rel="noreferrer" href={blog}>

@@ -4,13 +4,15 @@ import Input from '../components/input/index';
 import Button from '../components/Button';
 import ItensUser from '../components/UserRepo/User';
 import { Api } from '../services/Api';
-import gitLogo from '../img/git.png';
 import '../App.css';
+import gitLogo from "../assents/img/git.png"
+
 
 function App() {
-  const [currentRepo, setCurrentRepo] = useState('');
-  const [repos, setRepos] = useState([]);
-  const [errorMessage, setErrorMessage] = useState('');
+
+  const [currentRepo, setCurrentRepo] = useState<string>('');
+  const [repos, setRepos] = useState<any[]>([]);
+  const [errorMessage, setErrorMessage] = useState<string>('');
 
   const handleSearch = async () => {
     try {
@@ -27,13 +29,13 @@ function App() {
         }
       }
 
-      
+
     } catch (error) {
       setErrorMessage('Usuário não encontrado. Verifique o nome de usuário e tente novamente.');
     }
   };
 
-  const handleRemoveUser = (id) => {
+  const handleRemoveUser = (id: number) => {
     const removeUser = repos.filter((user) => id !== user.id);
     setRepos(removeUser);
   };
@@ -41,7 +43,7 @@ function App() {
   return (
     <Container className="App">
       <img className="logo" src={gitLogo} alt="GitHub logo" />
-      <Input value={currentRepo} onChange={(e) => setCurrentRepo(e.target.value)} />
+      <Input value={currentRepo} onChange={(e: any) => setCurrentRepo(e.target.value)} />
       <Button onClick={handleSearch} />
       {errorMessage && <p>{errorMessage}</p>}
       {repos.map((user) => (
