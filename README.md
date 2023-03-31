@@ -25,8 +25,8 @@ Para usar o projeto, siga os seguintes passos:
 - src
 - components: contém os componentes ReactJS da aplicação e estilização da aplicação.
 - services: contém os arquivos responsáveis por consumir a API do Github.
-- App.js: componente principal da aplicação.
-- index.js: arquivo de entrada da aplicação.
+- App.tsx: componente principal da aplicação.
+- index.tsx: arquivo de entrada da aplicação.
 
 # Conclusão
 O projeto é uma ótima oportunidade para praticar o consumo de APIs externas em projetos ReactJS. O uso das bibliotecas Axios e Styled Components torna o projeto mais fácil de ser desenvolvido e mais agradável visualmente.
