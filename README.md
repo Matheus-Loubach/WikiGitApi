@@ -1,7 +1,7 @@
 # WikiGitApi
 
 
-Este é um projeto desenvolvido em ReactJS que consome a API do Github para retornar informações de usuários, como nome, site, biografia, cidade e avatar. As bibliotecas utilizadas foram o Axios e o Styled Components para fazer as requisições e estilizar o conteúdo, respectivamente.
+Este é um projeto desenvolvido em ReactTsx que consome a API do Github para retornar informações de usuários, como nome, site, biografia, cidade e avatar. As bibliotecas utilizadas foram o Axios e o Styled Components para fazer as requisições e estilizar o conteúdo, respectivamente.
 
 # Como usar
 Para usar o projeto, siga os seguintes passos:
